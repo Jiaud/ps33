@@ -33,8 +33,17 @@ public class Catalog {
 		this.books = books;
 	}
 	
-
+	public  Book GetBook(Catalog cat, String id) {
+		Book k = null;
+		for(Book book : cat.getBooks()) {
+			if(book.getId().equals(id)) {
+				k = book;
+			}
+		}
+	return k;	
+	}
 	
+	public 
 	
 
 
